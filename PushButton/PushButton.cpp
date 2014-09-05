@@ -1,7 +1,7 @@
 /*
 PushButton.cpp - Librería para evitar el
 rebote del push button
-Creada por Bego Septiembre'2014
+Creada por Bego Septiembre '2014
 Lanzado bajo licencia MIT
 */
 
@@ -9,7 +9,7 @@ Lanzado bajo licencia MIT
 #include "PushButton.h"
 
 PushButton::PushButton(int btn, void (*callbt)())
-{ 
+{
   pinMode(btn, INPUT);
   _btn = btn;
 
@@ -17,7 +17,7 @@ PushButton::PushButton(int btn, void (*callbt)())
 }
 
 PushButton::PushButton(int btn, void (*callbt)(), void (*callbf)())
-{ 
+{
   pinMode(btn, INPUT);
   _btn = btn;
 
@@ -31,12 +31,12 @@ void PushButton::isPushed()
 
     if(estado && !edoAnt)
         callbt();
-      
+
     if(!estado)
     {
       	if(callbf)
       		callbf();
     }
-      	
+
     edoAnt = estado;
 }

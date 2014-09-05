@@ -1,7 +1,7 @@
 /*
 PushButton.h - Librería para evitar el
 rebote del push button
-Creada por Bego Septiembre'2014
+Creada por Bego Septiembre '2014
 Lanzado bajo licencia MIT
 */
 
@@ -20,7 +20,7 @@ private:
    int edoAnt;
 
 
-public:   
+public:
    PushButton(int btn, void(*)());
    PushButton(int btn, void(*)(), void(*)());
    void isPushed();
