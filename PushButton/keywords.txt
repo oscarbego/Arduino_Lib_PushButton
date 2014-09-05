@@ -1,0 +1,3 @@
+
+PushButton	KEYWORD1
+isPushed 	KEYWORD2
